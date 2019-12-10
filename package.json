@@ -1,0 +1,19 @@
+{
+  "name": "gatsby-plugin-openpay",
+  "version": "0.1.1",
+  "description": "Integrate OpenPay scripts to gatsby project",
+  "keywords": [
+    "gatsy",
+    "gatsby-plugin",
+    "gatsby-ssr-plugin",
+    "gatsby-browser-plugin",
+    "openpay"
+  ],
+  "author": "Alvaro Martinez",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^3.4.1",
+    "openpay-js": "^1.0.0",
+    "uuid": "^3.3.3"
+  }
+}
