@@ -16,24 +16,26 @@ None
 
 ## How to install
 
-    npm install --save alvaromashiro/gatsby-plugin-openpay
+    npm i gatsby-plugin-openpay
 
 After install gatsby-plugin-openpay you cand add it to plugin list in ```gatsby-config.js```
+```javascript
+plugins: [
+  {
+    resolve: "gatsby-plugin-openpay",
+    options: {
+      MERCHANT_ID: process.env.GATSBY_MERCHANT_ID,
+    PUBLIC_API_KEY: process.env.GATSBY_PUBLIC_API_KEY,
+      production:
+        process.env.GATSBY_ACTIVE_ENV ||
+        process.env.NODE_ENV ||
+        "development" ||
+        "production"
+    }
+  }
+]
+```
 
-    plugins: [
-     {
-       resolve: "gatsby-plugin-openpay",
-       options: {
-         MERCHANT_ID: process.env.GATSBY_MERCHANT_ID,
-        PUBLIC_API_KEY: process.env.GATSBY_PUBLIC_API_KEY,
-         production:
-           process.env.GATSBY_ACTIVE_ENV ||
-           process.env.NODE_ENV ||
-           "development" ||
-           "production"
-       }
-     }
-   ]
 ## Available options (if any)
 
 - production
