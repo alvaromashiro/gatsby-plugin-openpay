@@ -19,6 +19,13 @@ None
     npm i gatsby-plugin-openpay
 
 After install gatsby-plugin-openpay you cand add it to plugin list in ```gatsby-config.js```
+
+```javascript
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+```
+
 ```javascript
 plugins: [
   {
