@@ -1,7 +1,7 @@
 import React from "react";
 const { OpenPay } = window;
 
-export class OpenPayButton extends React.Component {
+class OpenPayButton extends React.Component {
   state = {
     disabled: false
   };
@@ -30,3 +30,4 @@ export class OpenPayButton extends React.Component {
     );
   }
 }
+export default OpenPayButton;
