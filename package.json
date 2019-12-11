@@ -1,6 +1,6 @@
 {
   "name": "gatsby-plugin-openpay",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Integrate OpenPay scripts to gatsby project",
   "keywords": [
     "gatsy",
@@ -14,6 +14,12 @@
   "dependencies": {
     "jquery": "^3.4.1",
     "openpay-js": "^1.0.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
     "uuid": "^3.3.3"
+  },
+  "repository": {
+    "url": "https://github.com/alvaromashiro/gatsby-plugin-openpay",
+    "type": "git"
   }
 }
