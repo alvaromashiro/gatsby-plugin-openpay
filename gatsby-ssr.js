@@ -9,15 +9,14 @@ const openpayScript = (
 );
 export const onRenderBody = ({ setPostBodyComponents }, configOptions) => {
   const { production, MERCHANT_ID, PUBLIC_API_KEY } = configOptions;
-  console.log(MERCHANT_ID, PUBLIC_API_KEY, production);
 
-  if (process.env.NODE_ENV !== `production`) {
+  if (production !== `production`) {
     console.warn("non production environment");
   }
-  if (!process.env.GATSBY_MERCHANT_ID || !MERCHANT_ID) {
+  if (!MERCHANT_ID) {
     console.error("No Merchant Id");
   }
-  if (!process.env.GATSBY_PUBLIC_API_KEY) {
+  if (!PUBLIC_API_KEY) {
     console.error("No Public API Key");
   }
 
