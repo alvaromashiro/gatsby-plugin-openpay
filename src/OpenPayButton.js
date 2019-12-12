@@ -2,9 +2,6 @@ import React from "react";
 const { OpenPay } = window;
 
 class OpenPayButton extends React.Component {
-  state = {
-    disabled: false
-  };
   componentDidMount() {
     const { sessionId } = window;
     this.props.getSessionId(sessionId);
@@ -21,9 +18,10 @@ class OpenPayButton extends React.Component {
   render() {
     return (
       <button
+        style={this.props.style}
         onClick={this.payButton}
-        disabled={this.state.disabled}
-        className={this.props.classes}
+        disabled={this.props.disabled}
+        className={this.props.className}
       >
         {this.props.text || "Pay"}
       </button>
