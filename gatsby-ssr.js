@@ -11,7 +11,9 @@ export const onRenderBody = ({ setPostBodyComponents }, configOptions) => {
   const { production, MERCHANT_ID, PUBLIC_API_KEY } = configOptions;
 
   if (production !== `production`) {
-    console.warn("non production environment");
+    console.warn("not production environment");
+  } else {
+    console.warn("production environment");
   }
   if (!MERCHANT_ID) {
     console.error("No Merchant Id");
