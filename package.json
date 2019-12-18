@@ -1,6 +1,6 @@
 {
   "name": "gatsby-plugin-openpay",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Integrate OpenPay scripts to gatsby project",
   "keywords": [
     "gatsy",

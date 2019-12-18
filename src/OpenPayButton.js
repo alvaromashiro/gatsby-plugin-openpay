@@ -1,5 +1,5 @@
 import React from "react";
-const { OpenPay } = window;
+import { getOpenPay } from "../utils";
 
 class OpenPayButton extends React.Component {
   componentDidMount() {
@@ -8,7 +8,7 @@ class OpenPayButton extends React.Component {
   }
 
   payButton = async () => {
-    await OpenPay.token.create(
+    await getOpenPay().token.create(
       this.props.card,
       response => this.props.handleResponse(response),
       response => this.props.handleError(response)
